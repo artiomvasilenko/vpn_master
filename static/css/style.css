@@ -1,0 +1,189 @@
+@font-face {
+    font-family: 'gagalin';
+    src: url("../fonts/Gagalin-Regular.otf");
+}
+@font-face {
+    font-family: 'livvic-italic';
+    src: url("../fonts/Livvic-Italic.ttf");
+}
+
+body {
+    background-color: #141414;
+}
+.start_background {
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    z-index: -1;
+    background-image: url("../img/vpn_large.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.slide {
+    margin-bottom: 5%;
+}
+.pressman {
+    font-family: gagalin;
+    font-size: 3em;
+    color: #E6DCC6;
+    letter-spacing: 20px;
+    border-bottom: 2px #E6DCC6 solid;
+}
+.header {
+    font-family: gagalin;
+    font-size: 350%;
+    color: #FFFFFF;
+    letter-spacing: 10px;
+    text-shadow: -4px 0px 0px #ff00ff, 4px 0px 0px #00ffff;
+    text-align: center;
+}
+.header_text {
+    margin-bottom: -6%;
+}
+.button_to_down {
+    margin-top: 50%;
+    background-color: #7ed957;
+    font-family: gagalin;
+    letter-spacing: 5px;
+    padding: 15px 60px;
+    border-radius: 50px;
+}
+.button_to_down:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.button_to_order {
+    margin-top: 5%;
+    background-color: #7ed957;
+    font-family: gagalin;
+    letter-spacing: 5px;
+    padding: 15px 60px;
+    border-radius: 50px;
+}
+.button_to_order:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.footnote {
+    margin-top: 7%;
+    font-size: 120%;
+    font-style: italic;
+    font-weight: bold;
+}
+.header_white {
+    font-family: gagalin;
+    font-size: 350%;
+    color: #FFFFFF;
+    text-align: center;
+}
+.header_white_for_benefits {
+    font-family: gagalin;
+    font-size: 250%;
+    color: #FFFFFF;
+    text-align: center;
+}
+.text_white {
+    margin: auto;
+    margin-top: 5%;
+}
+.sub_slide {
+    /*height: 350px;*/
+}
+.img_in_body {
+    object-fit: cover;
+    width: 100%;
+}
+.img_height_1 {
+    height: 80%;
+}
+.benefits_border {
+    border: 1px #a4a4a4 solid;
+    padding: 5%;
+    margin: 1%;
+    width: 25%;
+}
+.policy_link {
+    cursor: pointer;
+}
+
+.popup_container {
+    display: none;
+	/*width: 100%;*/
+	/*height: 100%;*/
+
+    /*background-image: url("../img/bg.png");*/
+    /*z-index: 10;*/
+}
+
+.policy_popup {
+    /*display: none;*/
+    background-color: #292929;
+    padding: 10px 80px 10px 80px;
+    font-size: 25px;
+    width: 75%;
+    position: absolute;
+    left: 5em;
+    top: 2em;
+    border-radius: 1em;
+    color: white;
+}
+.policy_popup__header {
+    text-align: center;
+}
+.policy_popup__subheader {
+    text-align: center;
+    font-size: 40px;
+}
+.policy_popup__text {
+    text-align: left;
+    font-family: sans-serif;
+}
+
+
+@media (max-width: 1399px) {
+    .start_background {
+        height: 750px;
+    }
+}
+@media (max-width: 1199px) {
+    .start_background {
+        height: 800px;
+    }
+    .header_white_for_benefits {
+        font-size: 2.2em;
+    }
+}
+@media (max-width: 991px) {
+    .start_background {
+        height: 850px;
+    }
+    .text_white {
+        font-size: large;
+    }
+    .header_white_for_benefits {
+        font-size: x-large;
+    }
+    .text_footer {
+        font-size: small;
+    }
+}
+@media (max-width: 767px) {
+    .start_background {
+        height: 820px;
+    }
+    .header_white {
+        font-size: xx-large;
+    }
+    .text_white {
+        font-size: small;
+    }
+    .header_white_for_benefits {
+        font-size: large;
+    }
+    .text_footer {
+        font-size: x-small;
+    }
+}
